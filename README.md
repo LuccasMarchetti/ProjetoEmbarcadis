@@ -1,9 +1,9 @@
 Este repósitório contém o código do projeto da disciplina de Sistemas Embarcados, tendo sido projetado para o núcleo M4 de uma Colibri iMX7D.
-Por conta da não simplicidade de uso do núcleo M4, não se disponibilizou a Device Tree do Linux, nem todo o kit de desenvolvimento de software, 
-mas apenas os códigos que sofreram alterações.
+O projeto foi realizado por Jean de Oliveira, Luccas Marchetti e Vinicius Axhcar, sendo a função de cada um desses, respectivamente, pesquisar bibliotecas para o uso de PWM no núcleo M4, uso do FreeRTOS e modificação da Device Tree do Linux, e, por fim, uso de interrupções no núcleo M4. Ambos os autores pesquisaram sobre o funcionamento particular do núcleo M4 e do RDC (Resource Domain Controller), e trabalharam na escrita dos códigos, concluindo o trabalho com a criação de uma biblioteca ("PID_MOTOR") e no código principal para a entrega do projeto.
 
-Em resumo, o código implementa um controlador PID de rotação de motor DC via PWM, utilizando-se de interrupções (advindas de um encoder de 30 posições),
-em conjunto com um GPT (General Purpose Timer) para obter a frequência de rotação.
+Por conta da complexidade de uso do núcleo M4, não se disponibilizou a Device Tree do Linux, nem todo o kit de desenvolvimento de software, mas apenas os códigos que sofreram alterações.
+
+Em resumo, o código implementa um controlador PID de rotação de motor DC via PWM, utilizando-se de interrupções (advindas de um encoder de 30 posições), em conjunto com um GPT (General Purpose Timer) para obter a frequência de rotação.
 
 Este repositório se utiliza de códigos e bibliotecas de terceiros, sobretudo a pwm_imx.
 
